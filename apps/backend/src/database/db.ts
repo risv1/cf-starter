@@ -37,5 +37,4 @@ export const getDb = (d1?: D1Database, env?: string) => {
   }
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
-export type DbInstance = ReturnType<any>
+export type DbInstance = ReturnType<typeof getDb>
